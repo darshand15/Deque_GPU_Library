@@ -1,6 +1,15 @@
-# Deque Data Structure Library for GPUs
+# Graphics Processing Units (GPUs): Architecture & Programming Project
+
+## Deque Data Structure Library for GPUs
 
 This repository contains three different implementations of a GPU-based double-ended queue (deque) along with a comprehensive suite of functional and performance benchmarks.
+
+## Team Members
+Darshan D
+
+## Abstract
+
+The end of Moore’s Law necessitates the development of innovative solutions to augment the performance of applications rather than attempting to pack more transistors on a chip and/or increasing the CPU frequency. In this direction, Graphics Processing Units (GPUs) are now ubiquitous for high-performance computing and enable a wide variety of applications. However, programming for GPUs is not necessarily straightforward nor intuitive. It requires a fundamental shift in thinking by the Software Developers. Consequently, this new paradigm and programming model can hinder the adoption of GPUs despite their immense capabilities. Further, even when adopted, they may be severely under-utilized due to inefficiencies in the developed Software. Building and supporting a data structure library for GPUs can significantly bridge this gap. This project is precisely such an effort to design and implement a data structure library for GPUs. The project specifically implements a generic (supporting all data-types) deque (double-ended queue) data structure which is a fundamental building block for a variety of applications and is highly versatile given that it can be reduced to represent other structures like stacks and queues. As part of this project, various implementations of the deque were experimented with and analyzed, including a naïve global lock-based implementation, a lock-free atomic counter-based implementation, both for global use across different blocks of a grid, and a shared memory-based implementation for intra-block communication. The generated results for the various benchmarks highlight the pros and cons of the different implementations and denote their suitability for different kinds of applications. The results for the lock-free version are quite promising as compared to the production grade, stdgpu library’s deque, with an approximate 36% improvement in execution time for a benchmark. Further, the block-level shared memory deque demonstrates a significant improvement, of up to 67% as compared to the lock free version, highlighting its suitability for applications requiring a deque only for Intra-Block coordination.
 
 ## Directory Structure
 

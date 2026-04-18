@@ -5,7 +5,7 @@
 This repository contains three different implementations of a GPU-based double-ended queue (deque) along with a comprehensive suite of functional and performance benchmarks.
 
 ## Team Members
-Darshan D
+Darshan Dinesh Kumar
 
 ## Abstract
 
@@ -47,7 +47,7 @@ All benchmark programs are located within the `benchmarks` directory, organized 
 
 ---
 
-## 🚀 How to Build and Execute Benchmarks
+## How to Build and Execute Benchmarks
 
 To run the standard benchmarks (functional, block deque, and global deque), follow these steps:
 
